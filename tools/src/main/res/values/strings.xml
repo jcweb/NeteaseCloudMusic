@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tools</string>
+    <string name="lrc_label">暂无歌词</string>
+    <string name="unknown">未知</string>
+</resources>

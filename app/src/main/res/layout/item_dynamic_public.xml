@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <com.app.tools.widget.CircularImageView
+        android:id="@+id/iv_dynamic_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_dynamic_head"
+        android:layout_toRightOf="@id/iv_dynamic_head"
+        android:maxLines="1"
+        android:text="这是name"
+        android:textColor="@color/black_666"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dynamic_atten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round_red_mini"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="+ 关注"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dynamic_date_or_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_dynamic_head"
+        android:layout_toRightOf="@id/iv_dynamic_head"
+        android:maxLines="1"
+        android:text="3月2日"
+        android:textColor="@color/black_999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dynamic_date_or_fans"
+        android:layout_alignLeft="@id/tv_dynamic_date_or_fans"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/iv_dynamic_head"
+        android:text="这是分享的内容"
+        android:textColor="@color/black_333"
+        android:textSize="18sp" />
+</RelativeLayout>

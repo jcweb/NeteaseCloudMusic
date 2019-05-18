@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_333"
+    android:fitsSystemWindows="true">
+
+    <com.app.tools.widget.XCRoundRectImageView
+        android:id="@+id/iv_music_cover"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/tv_music_play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_music_cover"
+        android:layout_alignRight="@id/iv_music_cover"
+        android:layout_marginRight="3dp"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_music_cover"
+        android:layout_toRightOf="@id/iv_music_cover"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_album_name"
+        android:layout_alignLeft="@id/tv_album_name"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical">
+
+        <com.app.tools.widget.CircularImageView
+            android:id="@+id/iv_music_header_user"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_music_header_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:drawableRight="@mipmap/ic_set_right_arrow"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white_16p" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_album_discribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_album_name"
+        android:layout_alignBottom="@id/iv_music_cover"
+        android:layout_marginRight="15dp"
+        android:drawableRight="@mipmap/ic_set_right_arrow"
+        android:drawablePadding="3dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="编辑信息"
+        android:textColor="@color/white_16p"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_music_cover"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_music_list_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_loading1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_music_list_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_loading1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_music_list_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_loading1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_music_list_select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_loading1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="多选"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

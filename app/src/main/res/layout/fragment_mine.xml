@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_mine"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabInlineLabel="false"
+            app:tabMaxWidth="200dp"
+            app:tabMinWidth="60dp"
+            app:tabMode="scrollable"></android.support.design.widget.TabLayout>
+
+        <include layout="@layout/layout_mine_vertial_list" />
+
+        <include layout="@layout/layout_mine_list_create_header" />
+
+        <LinearLayout
+            android:id="@+id/ll_container_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <include layout="@layout/layout_mine_list_collect_header" />
+
+        <LinearLayout
+            android:id="@+id/ll_container_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+</ScrollView>

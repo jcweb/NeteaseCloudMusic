@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_dynamic_public" />
+
+    <music.netease.com.neteasecloudmusic.widget.DynamicImageView
+        android:id="@+id/div_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="15dp"
+
+        app:sapcing="4dp"></music.netease.com.neteasecloudmusic.widget.DynamicImageView>
+
+    <RelativeLayout
+        android:id="@+id/rl_music_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_round_gray_mini">
+
+        <com.app.tools.widget.XCRoundRectImageView
+            android:id="@+id/iv_item_dynamic_music"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_play_bar_btn_play"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_item_dynamic_music_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_item_dynamic_music"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/iv_item_dynamic_music"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="sdads奥术大师多"
+            android:textColor="@color/black_333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_item_dynamic_music_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_item_dynamic_music"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/iv_item_dynamic_music"
+            android:text="sdasd"
+            android:textColor="@color/black_999"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" />
+    <item
+        android:id="@+id/menu_model"
+        android:icon="@mipmap/ic_menu_night"
+        android:title="夜间模式" />
+    <item
+        android:id="@+id/menu_timer"
+        android:icon="@mipmap/ic_menu_timer"
+        android:title="定时停止" />
+
+    <item
+        android:id="@+id/menu_loginout"
+        android:icon="@mipmap/ic_menu_exit"
+        android:title="退出登录" />
+</menu>
