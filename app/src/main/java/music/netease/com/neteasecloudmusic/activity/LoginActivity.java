@@ -64,8 +64,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         etPassword = findViewById(R.id.et_password);
         btnLogin = findViewById(R.id.btn_login);
         btnLogin.setOnClickListener(this);
-        strName = "13751074578";
-        strPassword = "chenJIE584520";
+        strName = "";
+        strPassword = "";
         Log.d("当前时间：", System.currentTimeMillis() + "");
     }
 
